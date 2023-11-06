@@ -359,10 +359,30 @@
       </div>
        <div class="row justify-content-center">
            <div class="col-lg-9">
-              <div class="justify-content-center text-center">
+              <div class="justify-content-center text-center center">
                <h6>Bagi Keluarga dan Sahabat yang ingin mengirimkan hadiah pernikahan, silahkan mengirimkannya melalui :</h6>
                <img src="img/bjb.png" alt="bank bjb" width="200px"><h6><br>a/n Rohman Hidayat<br>0095514952100</h6>
+               <input type="text" id="myInput" value="0095514952100" hidden>
+               <button onclick="myFunction()" class="cmn--btn">
+                     Salin
+               </button>
               </div>
+<script type="text/javascript">
+function myFunction() {
+  // Get the text field
+  var copyText = document.getElementById("myInput");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+  
+  // Alert the copied text
+  alert("No. Rek Disalin: " + copyText.value);
+}
+</script>   
            </div>
         </div>
    </div>
